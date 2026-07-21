@@ -1,0 +1,532 @@
+*{
+
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:Arial,sans-serif;
+
+}
+
+
+
+/* Animated Background */
+
+body{
+
+    background:linear-gradient(-45deg,
+    #00c9ff,#92fe9d,#ff9a9e,#fad0c4);
+
+    background-size:400% 400%;
+
+    animation:backgroundMove 10s infinite ease;
+
+}
+
+
+@keyframes backgroundMove{
+
+    0%{
+
+        background-position:0% 50%;
+
+    }
+
+    50%{
+
+        background-position:100% 50%;
+
+    }
+
+    100%{
+
+        background-position:0% 50%;
+
+    }
+
+}
+
+
+
+/* Header */
+
+header{
+
+    text-align:center;
+    padding:30px;
+    color:white;
+
+}
+
+
+
+/* Glowing Heading */
+
+.title{
+
+    animation:glow 2s infinite alternate;
+
+}
+
+
+@keyframes glow{
+
+    from{
+
+        text-shadow:0 0 10px white;
+
+    }
+
+    to{
+
+        text-shadow:
+        0 0 25px yellow,
+        0 0 35px white;
+
+    }
+
+}
+
+
+
+/* Navigation Bar */
+
+nav{
+
+    margin-top:20px;
+
+}
+
+
+nav a{
+
+    color:white;
+    text-decoration:none;
+    margin:18px;
+    font-size:20px;
+
+    transition:0.6s;
+
+}
+
+
+nav a:hover{
+
+    color:yellow;
+    letter-spacing:3px;
+    text-shadow:0 0 10px white;
+
+}
+
+
+
+/* Moving Bus Animation */
+
+.bus{
+
+    font-size:70px;
+
+    animation:busMove 9s infinite linear;
+
+}
+
+
+@keyframes busMove{
+
+
+    from{
+
+        transform:
+        translateX(-100px);
+
+    }
+
+
+    to{
+
+        transform:
+        translateX(1300px);
+
+    }
+
+}
+
+
+
+
+/* Welcome Section */
+
+.welcome{
+
+    text-align:center;
+    color:white;
+    padding:90px 20px;
+
+}
+
+
+
+.welcome h2{
+
+    font-size:45px;
+
+}
+
+
+.welcome p{
+
+    margin-top:20px;
+    font-size:25px;
+
+}
+
+
+
+/* Attractive Button */
+
+button{
+
+    margin-top:30px;
+
+    padding:18px 35px;
+
+    font-size:20px;
+
+    border:none;
+
+    border-radius:40px;
+
+    background:orange;
+
+    color:white;
+
+    cursor:pointer;
+
+
+    animation:pulse 2s infinite;
+
+
+    transition:0.6s;
+
+}
+
+
+
+@keyframes pulse{
+
+
+    0%{
+
+        box-shadow:
+        0 0 0px orange;
+
+    }
+
+
+    50%{
+
+        box-shadow:
+        0 0 30px yellow;
+
+    }
+
+
+    100%{
+
+        box-shadow:
+        0 0 0px orange;
+
+    }
+
+}
+
+
+
+button:hover{
+
+    background:red;
+
+    transform:
+
+    scale(1.15)
+    rotate(3deg);
+
+}
+
+
+
+/* Cards */
+
+.services{
+
+    display:flex;
+
+    justify-content:center;
+
+    gap:40px;
+
+    flex-wrap:wrap;
+
+    padding:50px;
+
+}
+
+
+.card{
+
+    width:280px;
+
+    padding:35px;
+
+    background:white;
+
+    border-radius:20px;
+
+    text-align:center;
+
+    box-shadow:0 0 20px gray;
+
+
+    transition:1s;
+
+}
+
+
+
+.card h3{
+
+    color:#ff5757;
+
+    margin-bottom:20px;
+
+}
+
+
+
+.card:hover{
+
+
+    transform:
+
+    scale(1.1)
+    rotateY(20deg)
+    translateY(-20px);
+
+
+    background:#fff6d5;
+
+
+    box-shadow:
+
+    0 0 30px yellow;
+
+}
+
+.offer-bar{
+
+overflow:hidden;
+background:gold;
+padding:15px;
+color:black;
+font-weight:bold;
+
+}
+
+
+.offer-bar p{
+
+animation:slide 18s infinite linear;
+
+}
+button{
+
+overflow:hidden;
+position:relative;
+
+}
+
+
+button::after{
+
+content:'';
+
+position:absolute;
+
+width:0;
+height:0;
+
+border-radius:50%;
+
+background:
+rgba(255,255,255,.5);
+
+transition:.8s;
+
+}
+
+
+button:hover::after{
+
+width:350px;
+height:350px;
+
+left:-50px;
+top:-120px;
+
+}
+.ticket{
+
+transform-style:
+preserve-3d;
+
+transition:1s;
+
+}
+
+
+.ticket:hover{
+
+transform:
+rotateY(180deg);
+
+}
+.shooting-star{
+
+position:absolute;
+
+font-size:30px;
+
+animation:
+shoot 6s infinite linear;
+
+}
+
+.review{
+
+animation:
+fadeReview 5s infinite;
+
+}
+input{
+
+transition:.7s;
+
+}
+
+
+input:focus{
+
+
+transform:
+scale(1.08);
+
+
+box-shadow:
+
+0 0 25px cyan;
+
+
+border:
+
+2px solid cyan;
+
+}
+input{
+
+transition:.7s;
+
+}
+
+
+input:focus{
+
+
+transform:
+scale(1.08);
+
+
+box-shadow:
+
+0 0 25px cyan;
+
+
+border:
+
+2px solid cyan;
+
+}
+@keyframes fadeReview{
+
+
+0%{
+
+opacity:0;
+
+}
+
+
+50%{
+
+opacity:1;
+
+}
+
+
+100%{
+
+opacity:0;
+
+}
+
+}
+@keyframes shoot{
+
+
+from{
+
+top:0;
+left:-100px;
+
+}
+
+
+to{
+
+top:300px;
+left:1300px;
+
+}
+
+}
+@keyframes slide{
+
+from{
+
+transform:
+translateX(100%);
+
+}
+
+to{
+
+transform:
+translateX(-100%);
+
+}
+
+}
+
+
+/* Footer */
+
+footer{
+
+
+    background:#222;
+
+    color:white;
+
+    text-align:center;
+
+    padding:25px;
+
+}
